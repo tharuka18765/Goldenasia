@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(login1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+.wrapper h1 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+body>div.signup-form>form>div:nth-child(5)>i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+
+}
+
+.input-box i {
+
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+
+.remember-forgot a {
+
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  text-transform: uppercase;
+
+  margin-top: 30px;
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Smooth transition for hover effect */
+
+
+}
+
+/* ... your existing .btn styles ... */
+
+.btn:hover {
+  background-color: #000;
+  /* Black background on hover */
+  color: #fff;
+  /* White text on hover */
+}
+
+.wrapper .register-link {
+  margin-top: 30px;
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+
+}
+
+.register-link p a {
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.alert {
+  color: #f8d7da;
+  background-color: rgb(31, 26, 26);
+  border-color: #f5c6cb;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('login1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+body>div.wrapper>div>form>div.remember-forgot>label {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+body>div.wrapper>div>form>div.register-link>p {
+  color: white;
+}
+
+body>div.wrapper>div>form>div>i {
+  margin-top: 10px;
+}
+
+body>div.wrapper>div>form>h2 {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.wrapper {
+
+  backdrop-filter: blur(3px);
+  margin-left: 700px;
+  width: 520px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+.login-form,
+.signup-form {
+
+
+  width: 520px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+.login-form {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.signup-form {
+  right: -600px;
+  /* Start off the screen */
+}
+
+/* Add this if you don't have it already for your input fields and buttons */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 55px;
+
+  background: #fff;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  padding: 20px 45px 20px 20px;
+  margin-top: 10px;
+}
+
+/* Placeholder color */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: black;
+}
+
+/* Icon styling inside input boxes */
+.input-box i {
+
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+
+}
+
+button[type="submit"] {
+  text-transform: uppercase;
+  margin-top: 30px;
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+  /* Black background on hover */
+  color: #fff;
+
+}
+
+.existing-member-link {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.existing-member-link:hover {
+  text-decoration: underline;
+}
+
+/* Error message box styles */
+.alert {
+  color: #f8d7da;
+  background-color: #721c24;
+  border-color: #f5c6cb;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+}
+
+body>div.signup-form>form>h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Update your styles for errors and buttons accordingly */
+/* Existing styles */
+/* Place your existing CSS here */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .wrapper,
+  .login-form,
+  .signup-form {
+    width: 90%;
+    /* Adjust width to fit smaller screens */
+    margin-left: 0;
+    /* Center form on the screen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    /* Make height flexible */
+    padding: 20px;
+    /* Adjust padding */
+  }
+
+  .input-box input,
+  button[type="submit"] {
+    height: 40px;
+    /* Adjust input and button height */
+  }
+
+  .wrapper h1,
+  .wrapper .input-box,
+  .wrapper .btn,
+  .wrapper .register-link p a,
+  .alert {
+    font-size: 14px;
+    /* Adjust font size for readability */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .wrapper .input-box,
+  .wrapper .btn,
+  .wrapper .register-link p a,
+  .alert {
+    font-size: 12px;
+    /* Further adjust font size for very small devices */
+  }
+
+  /* Further adjustments for the smallest screens */
+  .input-box i {
+    font-size: 16px;
+    /* Adjust icon size */
+    top: 25%;
+    /* Adjust icon position */
+  }
+}

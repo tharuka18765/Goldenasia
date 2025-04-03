@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    float: left;
+}
+
+.sidebar button {
+    display: block;
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.top-bar {
+    margin-left: 200px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar input {
+    width: 200px;
+    padding: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.content {
+    margin-left: 200px;
+    background-color: #17a2b8;
+    height: 94vh;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .top-bar {
+        margin-left: 0;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .top-bar input {
+        width: 100px;
+    }
+
+    .toggle-sidebar {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+}
+
+/* Toggle Sidebar Button for Mobile */
+@media (max-width: 768px) {
+    .toggle-sidebar {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+}

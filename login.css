@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('login1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.otp-form {
+    height: 300px;
+    width: 500px;
+    background: transparent;
+    /* Slightly transparent black */
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.otp-form input[type="text"] {
+    width: 400px;
+    padding: 15px;
+
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+.otp-form button[type="submit"] {
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 380px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.otp-form button[type="submit"]:hover {
+    background-color: #000;
+    /* Black background on hover */
+    color: #fff;
+}
+
+.alert {
+    color: #f8d7da;
+    background-color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+
+
+
+form {
+    height: 300px;
+    width: 500px;
+    background: transparent;
+    /* Slightly transparent black */
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+form h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+form button[type="submit"] {
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 380px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body>form>input[type=text] {
+    width: 400px;
+    padding: 15px;
+
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+body>form>input[type=password] {
+
+    width: 400px;
+    padding: 15px;
+
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+body>form>button:hover {
+    background-color: #000;
+    /* Black background on hover */
+    color: #fff;
+}
+@media (max-width: 600px) {
+    .otp-form,
+    form {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .otp-form input[type="text"],
+    form input[type="email"],
+    body > form > input[type=text],
+    body > form > input[type=password] {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .otp-form button[type="submit"],
+    form button[type="submit"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
